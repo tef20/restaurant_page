@@ -1,6 +1,5 @@
-import { addHeader } from './header.js';
-import { addFooter } from './footer.js';
-import { loadHomePage } from './homepage.js';
+import { addNavBindings } from './bindings.js'
+import { loadHeader, loadFooter } from './basicPage.js';
 import './reset.css';
 import './style.css';
 
@@ -13,7 +12,9 @@ const content = document.createElement('div');
 content.id = 'content';
 document.body.appendChild(content);
 
-// loadContent();
-addHeader();
-loadHomePage();
-addFooter();
+loadHeader();
+loadFooter();
+addNavBindings();
+// loadAboutPage();
+// loadMenuPage();
+// loadBookingPage();
