@@ -1,10 +1,8 @@
 function updateNav(newTitle) {
     // update nav highlighting
     document.querySelectorAll('.navItem').forEach(node => {
-        console.log(node.id);
         if (node.id === newTitle) {
             node.className = 'navItem selected';
-            console.log(node.id);
         } else {
             node.className = 'navItem';
         }
